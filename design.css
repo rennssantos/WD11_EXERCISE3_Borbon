@@ -1,0 +1,323 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body{
+    background-image: url("batangasresort.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+
+
+}
+
+
+#h1design{
+    color:  rgb(171, 143, 21);
+    font-size: 40pt;
+    text-align: center;
+    text-shadow: 3px 3px 0 black, 3px 3px 0 black, 3px 5px 0 black, 1px 1px 0 black;
+
+        
+    border-left: double rgb(184, 117, 23) 6px;
+    border-right: double rgb(3, 0, 6) 6px;
+    border-top: double rgb(184, 117, 23)6px;
+    border-bottom: double rgb(3, 0, 6) 6px;
+
+}
+ /*Slide Show codes*/   
+.picture {
+    position: relative;
+    
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+    float: right;
+  
+    border-radius: 5px;
+    box-shadow: 0px 4px 10px rgba(255,255,255, 0.2);
+  }
+  
+  /*Slide Show codes*/
+  .picture::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 900;
+  
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    background-color: rgba(255,255,255, 0.2);
+  }
+  
+  .picture_part {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 7;
+  
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+   
+    
+    
+    
+    transform: translateX( 700px );
+    background-image: url("taalvocano.png") ;
+    background-size:  500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    animation: opaqTransition 28s cubic-bezier(0, 0, 0, 0.97) infinite;
+  }
+  
+  
+  .picture_part.picture_part-two {
+    z-index: 6;
+    background-image: url("montemaria.png");
+    animation-delay: 7s;
+  }
+  
+  .picture_part.picture_part-three {
+    z-index: 5;
+    background-image: url("lomi.jpg");
+    animation-delay: 14s;
+  }
+  
+  .picture_part.picture_part-four{
+    z-index: 4;
+    background-image: url("sublian.png" );
+    animation-delay: 21s;
+  }
+
+   
+ 
+  
+  
+  @keyframes opaqTransition {
+    3% { transform: translateX( 0 ); }
+    25% { transform: translateX( 0 ); }
+    28% { transform: translateX( -700px ); }
+    100% { transform: translateX( -700px ); }
+   
+  }
+
+  /*this is for sideNavigation*/
+
+  #mySidenav a{
+    position: fixed;
+    left: -140px;
+    transition: 0.3s;
+    padding: 25px;
+    width: 150px;
+    font-size: 25px;
+    color: rgb(171, 143, 21);
+    border-radius: 0 5px 5px 0 ;
+    border-style: ridge;
+
+    text-shadow: 2px 2px 0 black, 2px 2px 0 black, 2px 2px 0 black, 1px 1px 0 black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #TouristSpot {
+    top: 200px;
+    background-color: rgb(255,255,255, 0.2);
+  }
+  
+  #FoodTrip {
+    top: 300px;
+    background-color:  rgb(255,255,255, 0.2);
+  }
+  
+  #Cultures {
+    top: 400px;
+    background-color: rgb(255,255,255, 0.2);
+  }
+
+  #Home{
+    top: 500px;
+    background-color: rgb(255,255,255, 0.2);
+
+  }
+
+
+
+
+
+
+
+  
+  /*TouristPage*/
+  .boxModel{
+  display: block;
+  border-style: double;
+  width: 400px;
+  height:  140px;
+  margin-left: 500px;
+  margin-right: 200px;
+  padding: 20px 20px 20px 20px;
+
+    text-align: center;
+    color:  rgb(171, 143, 21);
+    font-size: 15pt;
+    text-shadow: 2px 3px 0 black, 3px 3px 0 black, 3px 5px 0 black, 1px 1px 0 black;
+
+        
+    border-left: double rgb(184, 117, 23) 6px;
+    border-right: double rgb(3, 0, 6) 6px;
+    border-top: double rgb(184, 117, 23)6px;
+    border-bottom: double rgb(3, 0, 6) 6px;
+  
+  } 
+
+  /*TouristSpot1*/
+.imageContainer{
+position: relative;
+width: 1200px;
+height: 400px;
+margin: 100px auto;
+background-color: rgb(255,255,255, 0.5);
+margin-left: 150px;
+}
+
+.imageContainer .imagebox{
+position: relative;
+width: calc( 400px - 30px );
+height: calc(300px - 30px);
+background-color: rgb(255, 255, 255, 0.1);
+background-size: cover;
+float: left;
+margin: 15px;
+margin-top: 60px;
+border-style: solid;
+border-color: rgb(171, 143, 21);
+box-sizing: border-box;
+overflow: hidden;
+}
+
+.imageContainer .imagebox .btn{
+position: absolute; 
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("montemaria.png");
+background-size: cover;
+transition: 0.5s;
+z-index: 1;
+}
+
+.imageContainer .imagebox:hover .btn{
+  top: 10px;
+  right: calc(50% - 40px);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+
+.imageContainer .imagebox .content{
+  font-size: small;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(23, 19, 2);
+  position: absolute;
+  height: 100%;
+  top: 20px;
+  left: 50px;
+  text-align: right;
+  padding: 20px;
+}
+
+
+
+
+/*Tourist spot2*/
+  .imageContainer .imagebox .btn2{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("taalvocano.png");
+  background-size: cover;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .imageContainer .imagebox:hover .btn2{
+    top: 10px;
+    right: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+  }
+  
+  .imageContainer .imagebox .content2{
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(23, 19, 2);
+    position: absolute;
+    position: absolute;
+    height: 100%;
+    top: 20px;
+    left: 50px;
+    text-align: right;
+    padding: 20px;
+  }
+
+
+
+/*Tourist spot3*/
+.imageContainer .imagebox .btn3{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("gulugodbaboy.jpg");
+  background-size: cover;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .imageContainer .imagebox:hover .btn3{
+    top: 10px;
+    right: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    
+  }
+  
+  .imageContainer .imagebox .content3{
+    font-size: small;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(23, 19, 2);
+    position: absolute;
+    position: absolute;
+    height: 100%;
+    top: 20px;
+    left: 50px;
+    text-align: right;
+    padding: 20px;
+  }
+
+
+  
+
+
+

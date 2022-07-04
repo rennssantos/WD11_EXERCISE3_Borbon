@@ -1,0 +1,513 @@
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body{
+    background-image: url("batangasresort.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+
+}
+
+
+  /* TouristPage Navigation*/
+  #mySidenav a{
+    position: fixed;
+    left: -140px;
+    transition: 0.3s;
+    padding: 25px;
+    width: 150px;
+    font-size: 25px;
+    color: rgb(171, 143, 21);
+    border-radius: 0 5px 5px 0 ;
+    border-style: ridge;
+
+    text-shadow: 2px 2px 0 black, 2px 2px 0 black, 2px 2px 0 black, 1px 1px 0 black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: left;
+    text-decoration: none;
+  }
+  
+  #mySidenav a:hover {
+    left: 0;
+  }
+  
+  #TouristSpot {
+    top: 200px;
+    background-color: rgb(255,255,255, 0.2);
+  }
+  
+  #FoodTrip {
+    top: 300px;
+    background-color:  rgb(255,255,255, 0.2);
+  }
+  
+  #Cultures {
+    top: 400px;
+    background-color: rgb(255,255,255, 0.2);
+  }
+
+  #Home{
+    top: 500px;
+    background-color: rgb(255,255,255, 0.2);
+
+  }
+
+
+
+
+  /*foodpage*/
+
+  
+  .boxModel{
+    display: block;
+    border-style: double;
+    width: 400px;
+    height:  140px;
+    margin-left: 500px;
+    margin-right: 200px;
+    padding: 20px 20px 20px 20px;
+  
+      text-align: center;
+      color:  rgb(171, 143, 21);
+      font-size: 15pt;
+      text-shadow: 2px 3px 0 black, 3px 3px 0 black, 3px 5px 0 black, 1px 1px 0 black;
+  
+          
+      border-left: double rgb(184, 117, 23) 6px;
+      border-right: double rgb(3, 0, 6) 6px;
+      border-top: double rgb(184, 117, 23)6px;
+      border-bottom: double rgb(3, 0, 6) 6px;
+    
+    } 
+  
+    /*FoodLomi*/
+  .imageContainer{
+  position: relative;
+  width: 1200px;
+  height: 400px;
+  margin: 100px auto;
+  background-color: rgb(255,255,255, 0.5);
+  margin-left: 150px;
+  }
+  
+  .imageContainer .imagebox{
+  position: relative;
+  width: calc( 400px - 30px );
+  height: calc(300px - 30px);
+  background-color: rgb(255, 255, 255, 0.1);
+  background-size: cover;
+  float: left;
+  margin: 15px;
+  margin-top: 60px;
+  border-style: solid;
+  border-color: rgb(171, 143, 21);
+  box-sizing: border-box;
+  overflow: hidden;
+  }
+  
+  .imageContainer .imagebox .btn{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("lomi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .imageContainer .imagebox:hover .btn{
+    top: 10px;
+    right: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  
+  .imageContainer .imagebox .content{
+    font-size: small;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    color: rgb(23, 19, 2);
+    position: absolute;
+    height: 100%;
+    margin-left: 50px;
+    top: 20px;
+    left: 70px;
+    text-align: justify;
+    padding: 30px;
+  }
+  
+  
+  
+  
+  /*FoodBurger*/
+    .imageContainer .imagebox .btn2{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Burger.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+    }
+    
+    .imageContainer .imagebox:hover .btn2{
+      top: 10px;
+      right: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      
+    }
+    
+    .imageContainer .imagebox .content2{
+      font-size: small;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(23, 19, 2);
+      position: absolute;
+      position: absolute;
+      height: 100%;
+      margin-left: 50px;
+      top: 20px;
+      left: 70px;
+      text-align: justify;
+      padding: 20px;
+    }
+  
+  
+  
+  /*Food Bulalo*/
+  .imageContainer .imagebox .btn3{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("bulalo.jpg");
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+    }
+    
+    .imageContainer .imagebox:hover .btn3{
+      top: 10px;
+      right: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      
+    }
+    
+    .imageContainer .imagebox .content3{
+      font-size: small;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(23, 19, 2);
+      position: absolute;
+      position: absolute;
+      height: 100%;
+      margin-left: 50px;
+      top: 20px;
+      left: 70px;
+      text-align: justify;
+      padding: 20px;
+    }
+  
+
+
+
+    .imageContainer{
+  position: relative;
+  width: 1200px;
+  height: 400px;
+  margin: 100px auto;
+  background-color: rgb(255,255,255, 0.5);
+  margin-left: 150px;
+  }
+  
+  .imageContainer .imagebox{
+  position: relative;
+  width: calc( 400px - 30px );
+  height: calc(300px - 30px);
+  background-color: rgb(255, 255, 255, 0.1);
+  background-size: cover;
+  float: left;
+  margin: 15px;
+  margin-top: 60px;
+  border-style: solid;
+  border-color: rgb(171, 143, 21);
+  box-sizing: border-box;
+  overflow: hidden;
+  }
+  
+  .imageContainer .imagebox .btn{
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("lomi.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s;
+  z-index: 1;
+  }
+  
+  .imageContainer .imagebox:hover .btn{
+    top: 10px;
+    right: calc(50% - 40px);
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+  }
+  
+  
+  .imageContainer .imagebox .content{
+    font-size: small;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+    color: rgb(23, 19, 2);
+    position: absolute;
+    height: 100%;
+    margin-left: 50px;
+    top: 20px;
+    left: 70px;
+    text-align: justify;
+    padding: 30px;
+  }
+  
+  
+  
+  
+  /*FoodBurger*/
+    .imageContainer .imagebox .btn2{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("Burger.jpg");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+    }
+    
+    .imageContainer .imagebox:hover .btn2{
+      top: 10px;
+      right: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      
+    }
+    
+    .imageContainer .imagebox .content2{
+      font-size: small;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(23, 19, 2);
+      position: absolute;
+      position: absolute;
+      height: 100%;
+      margin-left: 50px;
+      top: 20px;
+      left: 70px;
+      text-align: justify;
+      padding: 20px;
+    }
+  
+  
+  
+  /*Food Bulalo*/
+  .imageContainer .imagebox .btn3{
+    position: absolute; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("bulalo.jpg");
+    background-size: cover;
+    transition: 0.5s;
+    z-index: 1;
+    }
+    
+    .imageContainer .imagebox:hover .btn3{
+      top: 10px;
+      right: calc(50% - 40px);
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      
+    }
+    
+    .imageContainer .imagebox .content3{
+      font-size: small;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      color: rgb(23, 19, 2);
+      position: absolute;
+      position: absolute;
+      height: 100%;
+      margin-left: 50px;
+      top: 20px;
+      left: 70px;
+      text-align: justify;
+      padding: 20px;
+    }
+  
+
+
+
+/*Sublian Festival*/
+    .imageContainer{
+      position: relative;
+      width: 1200px;
+      height: 400px;
+      margin: 100px auto;
+      background-color: rgb(255,255,255, 0.5);
+      margin-left: 150px;
+      }
+      
+      .imageContainer .imagebox{
+      position: relative;
+      width: calc( 400px - 30px );
+      height: calc(300px - 30px);
+      background-color: rgb(255, 255, 255, 0.1);
+      background-size: cover;
+      float: left;
+      margin: 15px;
+      margin-top: 60px;
+      border-style: solid;
+      border-color: rgb(171, 143, 21);
+      box-sizing: border-box;
+      overflow: hidden;
+      }
+      
+      .imageContainer .imagebox .btn4{
+      position: absolute; 
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("sublian2.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: 0.5s;
+      z-index: 1;
+      }
+      
+      .imageContainer .imagebox:hover .btn4{
+        top: 10px;
+        right: calc(50% - 40px);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+      
+      
+      .imageContainer .imagebox .content4{
+        font-size: small;
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder;
+        color: rgb(23, 19, 2);
+        position: absolute;
+        height: 100%;
+        margin-left: 50px;
+        top: 10px;
+        left: 70px;
+        text-align: justify;
+        padding: 30px;
+      }
+      
+      
+      
+      
+      /*Balsa Festival*/
+        .imageContainer .imagebox .btn5{
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("balsa.jpg");
+        background-position: center;
+        background-size: cover;
+        transition: 0.5s;
+        z-index: 1;
+        }
+        
+        .imageContainer .imagebox:hover .btn5{
+          top: 10px;
+          right: calc(50% - 40px);
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          
+        }
+        
+        .imageContainer .imagebox .content5{
+          font-size: small;
+          font-family: 'Times New Roman', Times, serif;
+          color: rgb(23, 19, 2);
+          position: absolute;
+          position: absolute;
+          height: 100%;
+          margin-left: 50px;
+          top: 20px;
+          left: 70px;
+          text-align: justify;
+          padding: 20px;
+        }
+      
+      
+      
+      /*Sigpawan Festival*/
+      .imageContainer .imagebox .btn6{
+        position: absolute; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("sigpawan.jpg");
+        background-size: cover;
+        transition: 0.5s;
+        z-index: 1;
+        }
+        
+        .imageContainer .imagebox:hover .btn6{
+          top: 10px;
+          right: calc(50% - 40px);
+          width: 80px;
+          height: 80px;
+          border-radius: 50%;
+          
+        }
+        
+        .imageContainer .imagebox .content6{
+          font-size: small;
+          font-family: 'Times New Roman', Times, serif;
+          font-weight: bolder;
+          color: rgb(23, 19, 2);
+          position: absolute;
+          position: absolute;
+          height: 100%;
+          margin-left: 50px;
+          top: 20px;
+          left: 70px;
+          text-align: justify;
+          padding: 20px;
+        }
+      
+    
+    
